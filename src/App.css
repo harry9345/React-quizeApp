@@ -1,38 +1,102 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
+body {
+  background-color: #4cabf5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   min-height: 100vh;
+}
+.App {
+  background-color: #252d4a;
+  width: 450px;
+  min-height: 200px;
+  height: min-content;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+  display: flex;
+  justify-content: space-evenly;
+}
+.ScoreSection {
+  display: flex;
+  font-size: 24px;
+  align-items: center;
+}
+.FinalSection {
+  font-weight: bold;
+  color: rgb(180, 75, 75);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.FinalSection a {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: #10222f;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+.FinalSection a:hover {
+  background-color: #1b2c69;
+}
+/*  question section */
+.QuestionSection {
+  width: 100%;
+  position: relative;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.QuestionText,
+.QuestionCount {
+  margin-bottom: 12px;
+  color: #fff;
+}
+.TimerText {
+  background-color: yellow;
+  padding: 15px;
+  margin-top: 20px;
+  margin-right: 20px;
+  border: 5px solid yellow;
+  border-radius: 15px;
+  text-align: center;
+}
+
+/* answers section */
+.AnswerSection {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+button {
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  background-color: #10222f;
+  border-radius: 15px;
+  display: flex;
+  padding: 5px;
+  justify-content: flex-start;
+  align-items: center;
+  border: 5px solid #234668;
+  cursor: pointer;
+}
+
+.Correct {
+  background-color: green;
+}
+.Incorrect {
+  background-color: red;
+}
+button:hover {
+  background-color: #555e7d;
+}
+button svg {
+  margin-right: 5px;
 }
