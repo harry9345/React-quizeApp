@@ -100,3 +100,21 @@ button:hover {
 button svg {
   margin-right: 5px;
 }
+
+.qminder {
+  margin-top: 50px;
+  font-size: 40px;
+}
+.qminderBtn {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  width: 100px;
+  border: 1px solid black;
+  background-color: #fff;
+  color: #10222f;
+
+  box-shadow: 10px 10px 42px 0px rgba(0, 0, 0, 0.75);
+}
